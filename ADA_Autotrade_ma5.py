@@ -56,7 +56,7 @@ while True:
             if target_price < current_price and ma5 < current_price:
                 krw = get_balance("KRW")
                 if krw > 5000:
-                    upbit.buy_market_order("KRW-ADA", krw*0.9995)
+                    upbit.buy_market_order("KRW-ADA", krw*0.9995/2)
         else:
             ada = get_balance("ADA")
             if ada > 5:
