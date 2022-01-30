@@ -30,7 +30,7 @@ def get_balance(ticker):
     return 0
     
 def get_current_price(ticker):
-    return pyupbit.get_orderbook(tickers=ticker)[0]["orderbook_units"][0]["ask_price"]
+    return pyupbit.get_orderbook(ticker=ticker)[0]["orderbook_units"][0]["ask_price"]
 
 upbit = pyupbit.Upbit(access, secret) 
 print("SMA_MACD Autotrade Start")
